@@ -40,7 +40,7 @@ jobs:
         with:
           host: ${{ secrets.TENCENT_HOST }}
           username: ${{ secrets.TENCENT_USER }}
-          key: ${{ secrets.TENCENT_PRIVATE_KEY }}
+          key: ${{ secrets.TENCENT_SSH_KEY }}
           script: |
             cd /data/nginx/webclone/
             git pull https://github.com/morganwang010/websiteclone.git
