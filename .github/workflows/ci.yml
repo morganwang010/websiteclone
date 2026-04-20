@@ -42,8 +42,8 @@ jobs:
           username: ${{ secrets.TENCENT_USER }}
           key: ${{ secrets.TENCENT_SSH_KEY }}
           script: |
-            cd /data/nginx/webclone/
-            git pull https://github.com/morganwang010/websiteclone.git
+            cd /data/nginx/webclone/websiteclone
+            git pull 
             npm install
             npm run build
-            pm2 restart websiteClone
+            pm2 restart websiteclone
