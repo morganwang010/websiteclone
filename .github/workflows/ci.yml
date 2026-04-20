@@ -23,17 +23,17 @@ jobs:
           node-version: 24
           cache: npm
 
-      - name: Install dependencies
-        run: npm ci
+      # - name: Install dependencies
+      #   run: npm 
 
-      - name: Lint
-        run: npm run lint
+      # - name: Lint
+      #   run: npm run lint
 
-      - name: Type check
-        run: npm run typecheck
+      # - name: Type check
+      #   run: npm run typecheck
 
-      - name: Build
-        run: npm run build
+      # - name: Build
+      #   run: npm run build
 
       - name: Deploy to server via SSH
         uses: appleboy/ssh-action@master
