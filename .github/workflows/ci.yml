@@ -43,7 +43,7 @@ jobs:
           key: ${{ secrets.TENCENT_PRIVATE_KEY }}
           script: |
             cd /data/nginx/webclone/
-            git pull
+            git pull https://github.com/morganwang010/websiteclone.git
             npm install
             npm run build
             pm2 restart websiteClone
