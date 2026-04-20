@@ -1,8 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   output: "standalone",
+  trailingSlash: true,
 };
-
+module.exports = {
+  output: "export",  // 👈 加上这个
+};
 export default nextConfig;

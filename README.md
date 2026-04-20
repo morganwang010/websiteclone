@@ -1,4 +1,8 @@
 # AI Website Cloner Template
+核心步骤：
+1.给chrome安装mcp插件
+2.打开插件，进行连接
+3.启动opencode,打开项目，在opencode中运行/clone-website命令
 
 <a href="https://github.com/JCodesMore/ai-website-cloner-template/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License" /></a> <a href="https://github.com/JCodesMore/ai-website-cloner-template/stargazers"><img src="https://img.shields.io/github/stars/JCodesMore/ai-website-cloner-template?style=flat" alt="Stars" /></a> <a href="https://discord.gg/hrTSX5yTpB"><img src="https://img.shields.io/discord/1400896964597383279?label=discord" alt="Discord" /></a>
 
