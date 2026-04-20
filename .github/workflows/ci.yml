@@ -34,3 +34,16 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Deploy to server via SSH
+              uses: appleboy/ssh-action@master
+              with:
+                host: ${{ secrets.TENCENT_HOST }}
+                username: ${{ secrets.TENCENT_USER }}
+                key: ${{ secrets.TENCENT_PRIVATE_KEY }}
+                script: |
+                  cd /data/nginx/webclone/websiteClone
+                  git pull
+                  npm install
+                  npm run build
+                  pm2 restart websiteClone
